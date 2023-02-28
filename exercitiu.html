@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="exercitiu.css">
+	<script type="text/javascript" src="exercitiu.js"></script>
+	<title>Exercitiu</title>
+</head>
+<body>
+
+ <div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Email</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="psw">Password</label>
+  	<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Baga ba ce trebuie : 1.Litera mare
+  																														  2.Litera mica
+  																														  3.Simbol
+  																														  4.Cifra" 
+  	required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="myInput" id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>10 characters</b></p>
+</div> 
+
+
+
+
+
+
+</body>
+</html>
